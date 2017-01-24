@@ -38,7 +38,6 @@
     //向当前绘图环境所创建的内存中的图片上填充一个矩形，绘制使用指定的混合模式。
     UIRectFillUsingBlendMode(newRect, kCGBlendModeSourceIn);
  
-
 }
 
 
