@@ -1,0 +1,25 @@
+//
+//  PrefixHeader.pch
+//  ZSScrollViewForTheNews
+//
+//  Created by 周松 on 17/1/19.
+//  Copyright © 2017年 周松. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+#endif /* PrefixHeader_pch */
+
+//屏幕的宽高
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+
+//频道的宽 高
+#define ITEMWIDTH 80
+#define ITEMHEIGHT 50
+
+//字体
+#define FONT  16.0f
+
