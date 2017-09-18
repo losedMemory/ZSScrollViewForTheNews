@@ -1,6 +1,6 @@
 # ZSScrollViewForTheNews
 ###效果图
-![image](https://github.com/losedMemory/ZSScrollViewForTheNews/blob/master/ZSScrollViewForTheNews/%E5%93%88%E5%93%88.gif)
+![image](https://github.com/losedMemory/ZSScrollViewForTheNews/blob/master/ZSScrollViewForTheNews/%E5%91%B5%E5%91%B5.gif)
 ###在滑动到过程中,当前频道的label由大变小,下一个频道由小变大,并且会有一个扫描文字的效果
 ###其中最重要的代码是对label的drawRect方法的重写
 	- (void)drawRect:(CGRect)rect{
