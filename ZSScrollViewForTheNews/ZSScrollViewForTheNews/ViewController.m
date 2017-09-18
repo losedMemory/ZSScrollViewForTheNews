@@ -4,11 +4,12 @@
 //
 //  Created by 周松 on 17/1/19.
 //  Copyright © 2017年 周松. All rights reserved.
-//
+///Users/zhousong/Desktop/ZSScrollViewForTheNews/ZSScrollViewForTheNews/ZSScrollViewForTheNews/ViewController.m:49:28: Assigning to 'id<UITableViewDelegate> _Nullable' from incompatible type 'UICollectionView *'
 
 #import "ViewController.h"
 #import "ChannelLabel.h"
 #import "ChannelScrollView.h"
+#import "ZSCollectionViewCell.h"
 
 @interface ViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 
@@ -30,6 +31,9 @@
 //设置流水布局
 @property (nonatomic,strong) UICollectionViewFlowLayout *flowLayout;
 
+@property (nonatomic,weak) UITableView *tableView;
+
+
 @end
 
 @implementation ViewController
@@ -40,6 +44,7 @@
     }
     return _channelLabelArray;
 }
+
 
 - (UIScrollView *)channelScrollView{
     if (_channelScrollView == nil) {
@@ -54,7 +59,7 @@
 
 - (UICollectionView *)newsCollection{
     if (_newsCollection  == nil) { 
-        _newsCollection = [[UICollectionView alloc]initWithFrame:CGRectMake(0, ITEMWIDTH, self.view.bounds.size.width, 300) collectionViewLayout:self.flowLayout];
+        _newsCollection = [[UICollectionView alloc]initWithFrame:CGRectMake(0, ITEMWIDTH, self.view.bounds.size.width, self.view.bounds.size.height - 50) collectionViewLayout:self.flowLayout];
         _newsCollection.pagingEnabled = YES;
         [self.view addSubview:_newsCollection];
     }
@@ -73,10 +78,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     //注册collectionView
-    [self.newsCollection registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"newsCell"];
+    [self.newsCollection registerClass:[ZSCollectionViewCell class] forCellWithReuseIdentifier:@"newsCell"];
     self.newsCollection.delegate = self;
     self.newsCollection.dataSource = self;
     [self setupUI];
+
 }
 //布局完成后调用
 - (void)viewDidLayoutSubviews{
@@ -129,11 +135,12 @@
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"newsCell" forIndexPath:indexPath];
-    CGFloat red = arc4random_uniform(256)/255.f;
-    CGFloat green = arc4random_uniform(256)/255.f;
-    CGFloat blue = arc4random_uniform(256)/255.f;
-    cell.backgroundColor = [UIColor colorWithRed:red green:green blue:blue alpha:1.0];
+    ZSCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"newsCell" forIndexPath:indexPath];
+//    CGFloat red = arc4random_uniform(256)/255.f;
+//    CGFloat green = arc4random_uniform(256)/255.f;
+//    CGFloat blue = arc4random_uniform(256)/255.f;
+//    cell.backgroundColor = [UIColor colorWithRed:red green:green blue:blue alpha:1.0];
+    cell.backgroundColor = [UIColor whiteColor];
     
     return cell;
 }

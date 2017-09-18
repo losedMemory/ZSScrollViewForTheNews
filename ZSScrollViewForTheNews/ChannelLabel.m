@@ -27,7 +27,6 @@
 - (void)setProgress:(CGFloat)progress{
     _progress = progress;
     [self setNeedsDisplay];
-    
 }
 
 - (void)drawRect:(CGRect)rect{
@@ -35,9 +34,9 @@
     [_fillColor set];
     CGRect newRect = rect;
     newRect.size.width = rect.size.width * self.progress;
+    //在控制器中左侧的label文本颜色是蓝色,填充色是黑色,右侧文本颜色是蓝色,填充色是黑色
     //向当前绘图环境所创建的内存中的图片上填充一个矩形，绘制使用指定的混合模式。
     UIRectFillUsingBlendMode(newRect, kCGBlendModeSourceIn);
- 
 }
 
 

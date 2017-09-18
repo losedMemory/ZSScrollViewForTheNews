@@ -15,6 +15,7 @@
 		850D9E921E304E550055A1E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 850D9E901E304E550055A1E8 /* LaunchScreen.storyboard */; };
 		850D9EA31E30AF4B0055A1E8 /* ChannelScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 850D9EA21E30AF4B0055A1E8 /* ChannelScrollView.m */; };
 		850D9EA61E30F1450055A1E8 /* ChannelLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 850D9EA51E30F1450055A1E8 /* ChannelLabel.m */; };
+		855A34461E9F9EDB00F09DA5 /* ZSCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 855A34451E9F9EDB00F09DA5 /* ZSCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,8 @@
 		850D9EA21E30AF4B0055A1E8 /* ChannelScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelScrollView.m; sourceTree = "<group>"; };
 		850D9EA41E30F1450055A1E8 /* ChannelLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChannelLabel.h; path = ../ChannelLabel.h; sourceTree = "<group>"; };
 		850D9EA51E30F1450055A1E8 /* ChannelLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChannelLabel.m; path = ../ChannelLabel.m; sourceTree = "<group>"; };
+		855A34441E9F9EDB00F09DA5 /* ZSCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSCollectionViewCell.h; sourceTree = "<group>"; };
+		855A34451E9F9EDB00F09DA5 /* ZSCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,8 @@
 				850D9EA51E30F1450055A1E8 /* ChannelLabel.m */,
 				850D9EA11E30AF4B0055A1E8 /* ChannelScrollView.h */,
 				850D9EA21E30AF4B0055A1E8 /* ChannelScrollView.m */,
+				855A34441E9F9EDB00F09DA5 /* ZSCollectionViewCell.h */,
+				855A34451E9F9EDB00F09DA5 /* ZSCollectionViewCell.m */,
 			);
 			name = ScrollView;
 			sourceTree = "<group>";
@@ -174,6 +179,7 @@
 				850D9E8A1E304E550055A1E8 /* ViewController.m in Sources */,
 				850D9EA31E30AF4B0055A1E8 /* ChannelScrollView.m in Sources */,
 				850D9E871E304E550055A1E8 /* AppDelegate.m in Sources */,
+				855A34461E9F9EDB00F09DA5 /* ZSCollectionViewCell.m in Sources */,
 				850D9E841E304E550055A1E8 /* main.m in Sources */,
 				850D9EA61E30F1450055A1E8 /* ChannelLabel.m in Sources */,
 			);
